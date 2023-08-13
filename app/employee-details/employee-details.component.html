@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Error</title>
+</head>
+
+<body>
+<div class="container mt-4">
+    <h2>Employee Details</h2>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ employee.name }}</h5>
+        <p class="card-text">Employee ID: {{ employee.employeeId }}</p>
+        <p class="card-text">Email: {{ employee.mailId }}</p>
+        <p class="card-text">Role: {{ employee.role }}</p>
+        <p class="card-text">Category: {{ employee.category }}</p>
+        <p class="card-text">Gender: {{ employee.gender }}</p>
+        <button class="btn btn-primary" routerLink="/employee-list">Back</button>
+        <button class="btn btn-warning" (click)="updateEmployee()">Edit</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+  
